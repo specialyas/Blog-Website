@@ -9,6 +9,19 @@
 
 
 
+<%  posts.forEach((item) => { %>
+    <div class="item">    
+        <h2><%= item.title %></h2>
+        <p><%= item.body.substring(0,100) + '...' %><a href="/post/<%= item.title %>">Read more</a></p>
+    </div>
+    <%})%> 
+
+   
+
+
+
+
+
 
 
 
