@@ -46,6 +46,8 @@ app.post('/compose', (req, res) => {
  res.redirect('/');
 
 })
+
+//  dynamic route
 app.get('/post/:title', (req, res) => {
   const postTitle =  _.lowerCase(req.params.title);
   const postKey = '';
@@ -60,14 +62,8 @@ app.get('/post/:title', (req, res) => {
     
  });
 
-// app.post('/', (req, res) => {
- 
 
-// })
-// app.post('/', (req, res) => {
- 
-
-// })
+// 
 // app.post('/', (req, res) => {
  
 
