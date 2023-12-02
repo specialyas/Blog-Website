@@ -15,18 +15,18 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-//  add item to the list
+// home route
 app.get('/', (req, res) => {
-  res.render('home')
+  res.render('home', {homeStartingContent: homeStartingContent})
 
 })
 
-app.get('/compose', (req, res) => {
-  res.render('compose')
+app.get('/about', (req, res) => {
+  res.render('about', {aboutContent: aboutContent})
 
 })
 app.get('/contact', (req, res) => {
-  res.render('contact')
+  res.render('contact', {contactContent: contactContent})
 
 })
 app.get('/post', (req, res) => {
