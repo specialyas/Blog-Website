@@ -29,20 +29,20 @@ app.get('/contact', (req, res) => {
   res.render('contact', {contactContent: contactContent})
 
 })
-app.get('/post', (req, res) => {
-  res.render('post')
+app.get('/compose', (req, res) => {
+  res.render('compose')
 
 })
 
 
-app.post('/', (req, res) => {
+app.post('/compose', (req, res) => {
+ console.log(req.body.postTitle)
+
+})
+// app.post('/', (req, res) => {
  
 
-})
-app.post('/', (req, res) => {
- 
-
-})
+// })
 
 
 
