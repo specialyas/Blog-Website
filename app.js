@@ -15,6 +15,34 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+//  add item to the list
+app.get('/', (req, res) => {
+  res.render('home')
+
+})
+
+app.get('/compose', (req, res) => {
+  res.render('compose')
+
+})
+app.get('/contact', (req, res) => {
+  res.render('contact')
+
+})
+app.get('/post', (req, res) => {
+  res.render('post')
+
+})
+
+
+app.post('/', (req, res) => {
+ 
+
+})
+app.post('/', (req, res) => {
+ 
+
+})
 
 
 
